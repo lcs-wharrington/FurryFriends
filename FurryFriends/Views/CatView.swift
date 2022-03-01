@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  CatView.swift
 //  FurryFriends
 //
 //  Created by William Robert Harrington on 2022-03-01.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct CatView: View {
     
     // MARK: Stored properties
     
@@ -24,6 +24,14 @@ struct ContentView: View {
             // Shows the main image
             RemoteImageView(fromURL: currentImage)
 
+                
+            HStack {
+              
+                //Add Friend to list
+                Image(systemName: "heart.circle")
+                    .font(.largeTitle)
+                    .foregroundColor(.red)
+                
                 //load a new image
                 Button(action: {
                     
@@ -35,13 +43,15 @@ struct ContentView: View {
                 })
                     .buttonStyle(.bordered)
             
+            }
             
             HStack {
               
                 //Add Friend to list
-                Image(systemName: "heart.circle")
+                Image(systemName: "square.and.arrow.down")
                     .font(.largeTitle)
-                    .foregroundColor(.red)
+                    .foregroundColor(.blue)
+                
                 //Add a title to the friend
                 TextField("Picture Title",
                           text: .constant(""),
@@ -68,16 +78,16 @@ struct ContentView: View {
         .task {
             
             // Example images for each type of pet
-            //let remoteCatImage = "https://purr.objects-us-east-1.dream.io/i/JJiYI.jpg"
-            let remoteDogImage = "https://images.dog.ceo/breeds/labrador/lab_young.JPG"
+            let remoteCatImage = "https://purr.objects-us-east-1.dream.io/i/JJiYI.jpg"
+            //let remoteDogImage = "https://images.dog.ceo/breeds/labrador/lab_young.JPG"
             
             // Replaces the transparent pixel image with an actual image of an animal
             // Adjust according to your preference ☺️
-            currentImage = URL(string: remoteDogImage)!
+            currentImage = URL(string: remoteCatImage)!
             
                         
         }
-        .navigationTitle("Furry Friends")
+        .navigationTitle("Cats")
         
     }
     
@@ -85,10 +95,13 @@ struct ContentView: View {
     
 }
 
-struct ContentView_Previews: PreviewProvider {
+
+struct CatView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            ContentView()
+            
+         CatView()
+            
         }
     }
 }

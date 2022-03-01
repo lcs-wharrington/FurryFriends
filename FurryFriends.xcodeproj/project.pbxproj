@@ -8,19 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		EAABEDE427CE63B800CD7BD7 /* FurryFriendsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAABEDE327CE63B800CD7BD7 /* FurryFriendsApp.swift */; };
-		EAABEDE627CE63B800CD7BD7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAABEDE527CE63B800CD7BD7 /* ContentView.swift */; };
 		EAABEDE827CE63BB00CD7BD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAABEDE727CE63BB00CD7BD7 /* Assets.xcassets */; };
 		EAABEDEB27CE63BB00CD7BD7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAABEDEA27CE63BB00CD7BD7 /* Preview Assets.xcassets */; };
 		EAABEDF427CE64FC00CD7BD7 /* RemoteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAABEDF327CE64FC00CD7BD7 /* RemoteImageView.swift */; };
+		EAABEDF627CE718100CD7BD7 /* DogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAABEDF527CE718100CD7BD7 /* DogView.swift */; };
+		EAABEDF827CE71B900CD7BD7 /* CatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAABEDF727CE71B900CD7BD7 /* CatView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EAABEDE027CE63B800CD7BD7 /* FurryFriends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FurryFriends.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAABEDE327CE63B800CD7BD7 /* FurryFriendsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FurryFriendsApp.swift; sourceTree = "<group>"; };
-		EAABEDE527CE63B800CD7BD7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EAABEDE727CE63BB00CD7BD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAABEDEA27CE63BB00CD7BD7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EAABEDF327CE64FC00CD7BD7 /* RemoteImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageView.swift; sourceTree = "<group>"; };
+		EAABEDF527CE718100CD7BD7 /* DogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogView.swift; sourceTree = "<group>"; };
+		EAABEDF727CE71B900CD7BD7 /* CatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +75,8 @@
 			isa = PBXGroup;
 			children = (
 				EAABEDF227CE64A100CD7BD7 /* Helpers */,
-				EAABEDE527CE63B800CD7BD7 /* ContentView.swift */,
+				EAABEDF527CE718100CD7BD7 /* DogView.swift */,
+				EAABEDF727CE71B900CD7BD7 /* CatView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -156,9 +159,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAABEDE627CE63B800CD7BD7 /* ContentView.swift in Sources */,
+				EAABEDF627CE718100CD7BD7 /* DogView.swift in Sources */,
 				EAABEDF427CE64FC00CD7BD7 /* RemoteImageView.swift in Sources */,
 				EAABEDE427CE63B800CD7BD7 /* FurryFriendsApp.swift in Sources */,
+				EAABEDF827CE71B900CD7BD7 /* CatView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,10 +9,23 @@ import SwiftUI
 
 @main
 struct FurryFriendsApp: App {
+    
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                ContentView()
+                TabView {
+                    DogView()
+                        .tabItem {
+                            Image(systemName: "pawprint.circle")
+                            Text("Dogs")
+                        }
+                    
+                    CatView()
+                        .tabItem {
+                            Image(systemName: "pawprint.circle")
+                            Text("Cats")
+                        }
+                }
             }
         }
     }
