@@ -11,7 +11,9 @@ import SwiftUI
 struct FurryFriendsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                ContentView()
+            }
         }
     }
 }

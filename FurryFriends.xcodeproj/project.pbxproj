@@ -11,6 +11,7 @@
 		EAABEDE627CE63B800CD7BD7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAABEDE527CE63B800CD7BD7 /* ContentView.swift */; };
 		EAABEDE827CE63BB00CD7BD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAABEDE727CE63BB00CD7BD7 /* Assets.xcassets */; };
 		EAABEDEB27CE63BB00CD7BD7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAABEDEA27CE63BB00CD7BD7 /* Preview Assets.xcassets */; };
+		EAABEDF427CE64FC00CD7BD7 /* RemoteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAABEDF327CE64FC00CD7BD7 /* RemoteImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		EAABEDE527CE63B800CD7BD7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EAABEDE727CE63BB00CD7BD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAABEDEA27CE63BB00CD7BD7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EAABEDF327CE64FC00CD7BD7 /* RemoteImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				EAABEDE327CE63B800CD7BD7 /* FurryFriendsApp.swift */,
-				EAABEDE527CE63B800CD7BD7 /* ContentView.swift */,
+				EAABEDF127CE649700CD7BD7 /* Views */,
 				EAABEDE727CE63BB00CD7BD7 /* Assets.xcassets */,
 				EAABEDE927CE63BB00CD7BD7 /* Preview Content */,
 			);
@@ -65,6 +67,23 @@
 				EAABEDEA27CE63BB00CD7BD7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EAABEDF127CE649700CD7BD7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EAABEDF227CE64A100CD7BD7 /* Helpers */,
+				EAABEDE527CE63B800CD7BD7 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EAABEDF227CE64A100CD7BD7 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				EAABEDF327CE64FC00CD7BD7 /* RemoteImageView.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAABEDE627CE63B800CD7BD7 /* ContentView.swift in Sources */,
+				EAABEDF427CE64FC00CD7BD7 /* RemoteImageView.swift in Sources */,
 				EAABEDE427CE63B800CD7BD7 /* FurryFriendsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
