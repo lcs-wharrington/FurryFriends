@@ -15,6 +15,7 @@ struct ContentView: View {
     // Starts as a transparent pixel – until an address for an animal's image is set
     @State var currentImage = URL(string: "https://www.russellgordon.ca/lcs/miscellaneous/transparent-pixel.png")!
     
+    
     // MARK: Computed properties
     var body: some View {
         
@@ -22,21 +23,58 @@ struct ContentView: View {
             
             // Shows the main image
             RemoteImageView(fromURL: currentImage)
-            
-            // Push main image to top of screen
-            Spacer()
 
+                //load a new image
+                Button(action: {
+                    
+                    print("Button was pressed")
+                    
+                }, label: {
+                    
+                    Text("New Picture")
+                })
+                    .buttonStyle(.bordered)
+            
+            
+            HStack {
+              
+                //Add Friend to list
+                Image(systemName: "heart.circle")
+                    .font(.largeTitle)
+                    .foregroundColor(.red)
+                //Add a title to the friend
+                TextField("Picture Title",
+                          text: .constant(""),
+                          prompt: Text("Name Your Friend..."))
+                
+            }
+            
+            //List title
+            HStack {
+                Text("Favourites")
+                    .bold()
+                
+                Spacer()
+            }
+            
+            
+            List{
+                
+            }
+            
+            Spacer()
         }
         // Runs once when the app is opened
         .task {
             
             // Example images for each type of pet
-            let remoteCatImage = "https://purr.objects-us-east-1.dream.io/i/JJiYI.jpg"
+            //let remoteCatImage = "https://purr.objects-us-east-1.dream.io/i/JJiYI.jpg"
             let remoteDogImage = "https://images.dog.ceo/breeds/labrador/lab_young.JPG"
             
             // Replaces the transparent pixel image with an actual image of an animal
             // Adjust according to your preference ☺️
             currentImage = URL(string: remoteDogImage)!
+            
                         
         }
         .navigationTitle("Furry Friends")
