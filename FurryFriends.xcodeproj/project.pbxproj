@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA6B362C27CFD21100C7F643 /* animalImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6B362B27CFD21100C7F643 /* animalImage.swift */; };
 		EAABEDE427CE63B800CD7BD7 /* FurryFriendsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAABEDE327CE63B800CD7BD7 /* FurryFriendsApp.swift */; };
 		EAABEDE827CE63BB00CD7BD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAABEDE727CE63BB00CD7BD7 /* Assets.xcassets */; };
 		EAABEDEB27CE63BB00CD7BD7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAABEDEA27CE63BB00CD7BD7 /* Preview Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA6B362B27CFD21100C7F643 /* animalImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = animalImage.swift; sourceTree = "<group>"; };
 		EAABEDE027CE63B800CD7BD7 /* FurryFriends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FurryFriends.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAABEDE327CE63B800CD7BD7 /* FurryFriendsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FurryFriendsApp.swift; sourceTree = "<group>"; };
 		EAABEDE727CE63BB00CD7BD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -36,6 +38,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EA6B362827CFD17F00C7F643 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EA6B362B27CFD21100C7F643 /* animalImage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		EAABEDD727CE63B800CD7BD7 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				EAABEDE327CE63B800CD7BD7 /* FurryFriendsApp.swift */,
+				EA6B362827CFD17F00C7F643 /* Model */,
 				EAABEDF127CE649700CD7BD7 /* Views */,
 				EAABEDE727CE63BB00CD7BD7 /* Assets.xcassets */,
 				EAABEDE927CE63BB00CD7BD7 /* Preview Content */,
@@ -159,6 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA6B362C27CFD21100C7F643 /* animalImage.swift in Sources */,
 				EAABEDF627CE718100CD7BD7 /* DogView.swift in Sources */,
 				EAABEDF427CE64FC00CD7BD7 /* RemoteImageView.swift in Sources */,
 				EAABEDE427CE63B800CD7BD7 /* FurryFriendsApp.swift in Sources */,
